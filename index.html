@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    CSS Selectors and Specifity
+  </title>
+  <link rel="stylesheet" href="C:\Users\Polo\Documents\projects\CSS selection and specifity cheat sheet\resources\styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1>CSS Selectors and Specifity</h1>
+  <h2>Selectors</h2>
+  <p> A selector is used to target the specific HTML elements to be styled. It does not include the angle brackets {}</p>
+  <table>
+    <thead>
+    <tr>
+      <th>Selector</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Class name</td>
+        <td>Class selectors select all elements with a matching class.</td>
+        <td> .jumbo { 
+          text-size: 100px;} </td>
+      </tr>
+      <tr>
+        <td>Element selectors</td>
+        <td>You are able to select HTML elements first by simply using the name of the element.</td>
+        <td> h1 {color: blue;}</td>
+      </tr>
+      <tr>
+        <td>ID selectors</td>
+        <td>ID selectors are used to select only a single item on a page. They will ONLY select the first element with a matching ID.</td>
+        <td>#thatThingINeededToStyle {color: blue; font-size: 24px;}</td>
+
+      </tr>
+      <tr>
+        <td>Attribute selectors</td>
+        <td>It can be used to target HTML elements that already contain attributes</td>
+        <td>input[type="text"] { 
+          width 100px;}</td>
+      </tr>
+      <tr>
+        <td>Child selectors</td>
+        <td>You can also use multiple selectors to get the exact elements you want, by using parental nesting. By using the “greater-than” symbol, you can select only the direct children of an element, going down only one level.</td>
+        <td>ul a {
+  text-underline: none;} </td>
+  </tr>
+  <tr>
+    <td>Universal selector</td>
+    <td>The universal selector (*) may be used to select all the elements in a particular range. </td>
+    <td>body * {
+  color: red;
+} <br>(this example will select children of the body) <br></td>
+</tr>
+<tr>
+  <td>Pseudo class selectors</td>
+  <td>Pseudo Selectors can be used to narrow down a selection with certain rules.</td>
+  <td>li:first-child {
+  color: red;}
+  <br>(This selects only li elements that have no elements before them)<br> </td>
+  </tr>
+    </tbody>
+  </table>
+
+  <h2>Specifity</h2>
+  <table>
+  <tr>
+    <th>Name</th>
+    <th>Example</th>
+    </tr>
+    <tr>
+      <td class="names2"> Type</td>
+      <td class="examples2"> h5 {
+        color: yellow;}</td>
+      </tr>
+      <tr>
+        <td class="names2">Class</td>
+        <td class="examples2">.author class{ 
+          color: pink;}</td>
+        </tr>
+        <tr>
+          <td class="names2">ID</td>
+          <td class="examples2">#author-id {
+            color: blue;}</td>
+            </tr>
+
+  </table>
+  
+</body>
+
+</html>
